@@ -1,28 +1,27 @@
-react-slidedown
-============================
-React component which uses CSS to animate a child from its current height to ```height: auto``` when mounting/updating/unmounting.
+# react-slide-expand
 
-[![build status](https://secure.travis-ci.org/frankwallis/react-slidedown.png?branch=master)](http://travis-ci.org/frankwallis/react-slidedown)
+React component which uses CSS to animate a child from its current height and/or width to ```height: auto``` and/or ```width: auto``` when mounting/updating/unmounting.
+
 
 [Live Demo](https://ykxm1vz5vv.codesandbox.io/)
 
-## Overview ##
+## Overview
 
-CSS does not currently support animating element height to ```height: auto``` and so *normally* javascript is used to achieve this effect.
+CSS does not currently support animating element height/width to `auto` and so *normally* javascript is used to achieve this effect.
 
-This component uses CSS to perform the animation, following an algorithm ([first described here](http://n12v.com/css-transition-to-from-auto)). The desired height of the element is calculated, and then css is used to transition that height. After the transition has completed the height is set to ```height: auto```.
+This component uses CSS to perform the animation, following an algorithm ([first described here](http://n12v.com/css-transition-to-from-auto)). The desired height/width of the element is calculated, and then css is used to transition that height/width. After the transition has completed the height/width is set to `auto`.
 
-react-slidedown is perfect for dropdown lists, popup menus, accordions and closeable panels which have varying sized content.
+react-slide-expand is perfect for dropdown lists, popup menus, accordions and closeable panels which have varying sized content.
 
 I am not aware of any cross-browser issues from IE10 and onwards.
 
-## Installation ##
+## Installation
 
 ```sh
-npm install react-slidedown --save
+npm install react-slide-expand --save
 ```
 
-## Usage ##
+## Usage - UPDATE BELOW PARTS
 
 Simply wrap the component you want to slide with the ```SlideDown``` component:
 
